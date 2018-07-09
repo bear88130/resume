@@ -1,19 +1,40 @@
 /* 桌機 */
 
 @media (min-width: 992px) {
-
+  .card{
+    margin: 12px 0 0 0;
+  }
+  details{
+    img{
+      width:150px;
+    }
+  }
 }
 
 /* 平板 */
 
 @media (min-width: 768px) and (max-width:991px) {
-
+  .card{
+    margin: 12px 0 0 0;
+  }
+  details{
+    img{
+      width:150px;
+    }
+  }
 }
 
 /* 手機 */
 
 @media (max-width: 767px) {
-
+  .card{
+    margin: 12px auto 0 auto;
+  }
+  details{
+    img{
+      width:100px;
+    }
+  }
 }
 
 /* For320px */
