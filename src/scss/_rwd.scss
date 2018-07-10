@@ -1,12 +1,12 @@
 /* 桌機 */
 
 @media (min-width: 992px) {
-  .card{
+  .card {
     margin: 12px 0 0 0;
   }
-  details{
-    img{
-      width:150px;
+  details {
+    img {
+      width: 150px;
     }
   }
 }
@@ -14,12 +14,12 @@
 /* 平板 */
 
 @media (min-width: 768px) and (max-width:991px) {
-  .card{
+  .card {
     margin: 12px 0 0 0;
   }
-  details{
-    img{
-      width:150px;
+  details {
+    img {
+      width: 150px;
     }
   }
 }
@@ -27,21 +27,28 @@
 /* 手機 */
 
 @media (max-width: 767px) {
-  .card{
+  .card {
     margin: 12px auto 0 auto;
   }
-  details{
-    img{
-      width:100px;
+  details {
+    img {
+      width: 100px;
     }
   }
-  .modal-80{
+  .modal-80 {
     max-width: 100%;
+  }
+  .skill {
+    img {
+      width: 150px;
+    }
   }
 }
 
 /* For320px */
 
 @media (max-width: 340px) {
-
+  .rNavBar .img img {
+    width: 120px;
+}
 }

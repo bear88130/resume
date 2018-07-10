@@ -7,6 +7,14 @@
     <div class="col-6 img">
       <img src="img/my.jpg" alt="myPhoto">
     </div>
+    <div class="col-12 forSwitch">
+      <span class="">精簡型</span>
+      <label class="switch">
+        <input type="checkbox" (click)="forStreamline($event.target.checked)">
+        <span class="slider round"></span>
+      </label>
+      <span>綜合型</span>
+    </div>
   </div>
 
   <div class="row information">
@@ -45,7 +53,177 @@
     </div>
   </div>
 
-  <div class="row experience">
+  <div class="row skill" *ngIf="isF2E">
+    <div class="col-12">
+      <h4>Skill</h4>
+    </div>
+    <div class="col-12">
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                切版
+              </button>
+            </h5>
+          </div>
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-6 col-md-12">
+                  <figure>
+                    <figcaption>2018 - file CSS - ToDoList</figcaption>
+                    <a target="_blank" href="https://bear88130.github.io/">
+                      <img src="img/skill-10.png" alt="skill-10">
+                    </a>
+                  </figure>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <figure>
+                    <figcaption>2018 - bgImg CSS - Filter</figcaption>
+                    <a target="_blank" href="https://bear88130.github.io/F2E-2">
+                      <img src="img/skill-11.png" alt="skill-11">
+                    </a>
+                  </figure>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <figure>
+                    <figcaption>2018 - Chart.js - Admin Order</figcaption>
+                    <a target="_blank" href="https://bear88130.github.io/F2E-3">
+                      <img src="img/skill-12.png" alt="skill-12">
+                    </a>
+                  </figure>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <figure>
+                    <figcaption>2018 - Grid CSS - Product Gallery</figcaption>
+                    <a target="_blank" href="https://bear88130.github.io/F2E-4">
+                      <img src="img/skill-13.png" alt="skill-13">
+                    </a>
+                  </figure>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <figure>
+                    <figcaption>2016 - 輪播圖應用，手刻 CSS </figcaption>
+                    <a data-toggle="modal" data-target="#lightBoxModal" href="javascript:" (click)="turnLightBox('3','輪播圖應用，手刻 CSS')">
+                      <img src="img/skill-3.png" alt="Forest">
+                    </a>
+                  </figure>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <figure>
+                    <figcaption>2016 - 套版</figcaption>
+                    <a data-toggle="modal" data-target="#lightBoxModal" href="javascript:" (click)="turnLightBox('6','套版，還不會考量設計')">
+                      <img src="img/skill-6.png" alt="Forest">
+                    </a>
+                  </figure>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <figure>
+                    <figcaption>2016 - BootStrap3.3.7 製作</figcaption>
+                    <a data-toggle="modal" data-target="#lightBoxModal" href="javascript:" (click)="turnLightBox('8','利用 BootStrap3.3.7 製作')">
+                      <img src="img/skill-8.png" alt="Forest">
+                    </a>
+                  </figure>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <figure>
+                    <figcaption>2015 - 比較特別的頁面樣式 </figcaption>
+                    <a data-toggle="modal" data-target="#lightBoxModal" href="javascript:" (click)="turnLightBox('1','比較特別的頁面樣式')">
+                      <img src="img/skill-1.png" alt="Forest">
+                    </a>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                aria-controls="collapseTwo">
+                Angular
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                      <figure>
+                        <figcaption>2018 - Angular - Commic</figcaption>
+                        <a target="_blank" href="https://bear88130.github.io/commic/">
+                          <img src="img/skill-14.png" alt="skill-14">
+                        </a>
+                      </figure>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                      <figure>
+                        <figcaption>2018 - Angular 初階線上課程</figcaption>
+                        <a data-toggle="modal" data-target="#lightBoxModal" href="javascript:" (click)="turnLightBox('15','2018 - Angular 初階線上課程')">
+                          <img src="img/skill-15.png" alt="skill-15">
+                        </a>
+                      </figure>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                aria-controls="collapseThree">
+                GitHub
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                      <figure>
+                        <figcaption>偏向用 GitHub Desktop</figcaption>
+                        <a target="_blank" href="https://github.com/bear88130">
+                          <img src="img/skill-16.png" alt="skill-16">
+                        </a>
+                      </figure>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                aria-controls="collapseThree">
+                .NET WebForm
+              </button>
+            </h5>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                      <figure>
+                        <figcaption>一般官網</figcaption>
+                        <a target="_blank" href="http://summerhill.com.tw/">
+                          <img src="img/skill-17.png" alt="skill-17">
+                        </a>
+                      </figure>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row experience" *ngIf="!isF2E">
     <div class="col-12">
       <h4>Experience</h4>
     </div>
@@ -130,7 +308,7 @@
         <div class="card-note">10個月</div>
       </div>
     </div>
-    <div class="col-lg-4 col-md-6 col-sm-12 order-1">
+    <div class="col-lg-4 col-md-6 col-sm-12">
       <div class="card" style="width: 18rem;">
         <div class="card-img" style="background-image:url('img/ex-6.jpg')"></div>
         <div class="card-body">
@@ -265,19 +443,9 @@
       </div>
     </div>
     <!-- 科技公司Modal End -->
-
   </div>
 
-  <div class="row product">
-    <div class="col-12"></div>
-    <div class="col-12"></div>
-    <div class="col-12"></div>
-    <div class="col-12"></div>
-    <div class="col-12"></div>
-    <div class="col-12"></div>
-  </div>
-
-  <div class="row learn">
+  <div class="row learn" *ngIf="!isF2E">
     <div class="col-12">
       <h4>Skill History</h4>
     </div>
@@ -430,11 +598,11 @@
               </ul>
             </details>
             <details>
-                <summary>GitHub Desktop使用</summary>
-                <ul>
-                    <li>有使用 git 指令上傳</li>
-                  </ul>
-              </details>
+              <summary>GitHub Desktop使用</summary>
+              <ul>
+                <li>有使用 git 指令上傳</li>
+              </ul>
+            </details>
             <details>
               <summary>接手 設計套版</summary>
               <ul>
@@ -459,75 +627,84 @@
               </ul>
             </details>
             <details>
-                <summary><a target="_blank" href="https://ithelp.ithome.com.tw/users/20107754/ironman/1502"> 2018 iT 邦幫忙鐵人賽 ( 第一次專案的整理 ) </a></summary>
-              </details>
+              <summary>
+                <a target="_blank" href="https://ithelp.ithome.com.tw/users/20107754/ironman/1502"> 2018 iT 邦幫忙鐵人賽 ( 第一次專案的整理 ) </a>
+              </summary>
+            </details>
           </div>
         </div>
         <div class="containerTime right">
           <div class="content">
             <h5>2018</h5>
             <details>
-                <summary>網站優化</summary>
-                <ul>
-                  <li>圖片大小後台程式碼壓縮</li>
-                  <li>圖片 LazyLoad</li>
-                  <li>JS 配置優化</li>
-                  <li>CSS 配置優化</li>
-                  <li>檔案壓縮</li>
-                  <li>IIS 壓縮</li>
-                </ul>
-              </details>
+              <summary>網站優化</summary>
+              <ul>
+                <li>圖片大小後台程式碼壓縮</li>
+                <li>圖片 LazyLoad</li>
+                <li>JS 配置優化</li>
+                <li>CSS 配置優化</li>
+                <li>檔案壓縮</li>
+                <li>IIS 壓縮</li>
+              </ul>
+            </details>
             <details>
-                <summary>有稿切版(CSS表單、位置)</summary>
-                <ul>
-                  <li>CSS 表單樣式和位置</li>
-                  <li>JS Click 和 IMG 互動</li>
-                </ul>
-              </details>
-              <details>
-                  <summary>搭配客戶和設計師討論切版(限制 Table RWD 切版)</summary>
-                  <ul>
-                    <li>只用產出 HTML 切版</li>
-                    <li>協助後端工程師套版</li>
-                    <li>checkbox radiobox CSS 刻製化</li>
-                    <li>SCSS</li>
-                  </ul>
-                </details>
-              <details>
-                  <summary>Gulp 任務管理</summary>
-                  <ul>
-                    <li>添加 CSS前贅字</li>
-                    <li>scss編譯成 css</li>
-                    <li>壓縮檔案</li>
-                  </ul>
-                </details>
-                <details>
-                    <summary>Angular6</summary>
-                    <ul>
-                      <li><a target="_blank" href="https://bear88130.github.io/commic/">挑戰賽第五週</a></li>
-                      <li>資料繫結</li>
-                      <li>參考變數</li>
-                      <li>子傳父值</li>
-                    </ul>
-                  </details>
-                  <details open>
-                      <summary>The F2E 修練賽 ( CSS挑戰 )</summary>
-                      <ul>
-                        <li><a target="_blank" href="https://bear88130.github.io/">ToDoList</a> - file CSS </li>
-                        <li><a target="_blank" href="https://bear88130.github.io/F2E-2">Filter</a> - bgImg CSS </li>
-                        <li><a target="_blank" href="https://bear88130.github.io/F2E-3">Admin Order</a> - Chart.js ( 無RWD )</li>
-                        <li><a target="_blank" href="https://bear88130.github.io/F2E-4">Product Gallery</a> - Grid CSS</li>
-                        <li><a target="_blank" href="https://bear88130.github.io/commic">Commic</a> - Angular傳值</li>
-                      </ul>
-                    </details>
-                    <details>
-                        <summary>客戶接洽</summary>
-                        <ul>
-                          <li>需求分析</li>
-                          <li>報價</li>
-                          <li>企劃書</li>
-                        </ul>
-                      </details>
+              <summary>有稿切版(CSS表單、位置)</summary>
+              <ul>
+                <li>CSS 表單樣式和位置</li>
+                <li>JS Click 和 IMG 互動</li>
+              </ul>
+            </details>
+            <details>
+              <summary>搭配客戶和設計師討論切版(限制 Table RWD 切版)</summary>
+              <ul>
+                <li>只用產出 HTML 切版</li>
+                <li>協助後端工程師套版</li>
+                <li>checkbox radiobox CSS 刻製化</li>
+                <li>SCSS</li>
+              </ul>
+            </details>
+            <details>
+              <summary>Gulp 任務管理</summary>
+              <ul>
+                <li>添加 CSS前贅字</li>
+                <li>scss編譯成 css</li>
+                <li>壓縮檔案</li>
+              </ul>
+            </details>
+            <details>
+              <summary>Angular6</summary>
+              <ul>
+                <li>
+                  <a target="_blank" href="https://bear88130.github.io/commic/">挑戰賽第五週</a>
+                </li>
+                <li>資料繫結</li>
+                <li>參考變數</li>
+                <li>子傳父值</li>
+              </ul>
+            </details>
+            <details open>
+              <summary>The F2E 修練賽 ( CSS挑戰 )</summary>
+              <ul>
+                <li>
+                  <a target="_blank" href="https://bear88130.github.io/">ToDoList</a> - file CSS </li>
+                <li>
+                  <a target="_blank" href="https://bear88130.github.io/F2E-2">Filter</a> - bgImg CSS </li>
+                <li>
+                  <a target="_blank" href="https://bear88130.github.io/F2E-3">Admin Order</a> - Chart.js ( 無RWD )</li>
+                <li>
+                  <a target="_blank" href="https://bear88130.github.io/F2E-4">Product Gallery</a> - Grid CSS</li>
+                <li>
+                  <a target="_blank" href="https://bear88130.github.io/commic">Commic</a> - Angular傳值</li>
+              </ul>
+            </details>
+            <details>
+              <summary>客戶接洽</summary>
+              <ul>
+                <li>需求分析</li>
+                <li>報價</li>
+                <li>企劃書</li>
+              </ul>
+            </details>
           </div>
         </div>
       </div>
@@ -535,23 +712,23 @@
     </div>
   </div>
 
-    <!-- 圖片 Modal Start -->
-    <div class="modal fade" id="lightBoxModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-80" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">{{lightBoxTitle}}</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <img [src]="lightBoxImg" alt="">
-          </div>
+  <!-- 圖片 Modal Start -->
+  <div class="modal fade" id="lightBoxModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-80" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">{{lightBoxTitle}}</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img [src]="lightBoxImg" alt="">
         </div>
       </div>
     </div>
-    <!-- 圖片 Modal End -->
+  </div>
+  <!-- 圖片 Modal End -->
 
   <footer></footer>
 
