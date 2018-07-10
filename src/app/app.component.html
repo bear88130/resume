@@ -232,7 +232,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">嘉義縣社會教育科-學員</h5>
+            <h5 class="modal-title" id="exampleModalLabel">嘉義縣社會教育科-教育替代役</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -250,7 +250,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">科技公司-學員</h5>
+            <h5 class="modal-title" id="exampleModalLabel">科技公司-程式設計師</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -316,18 +316,18 @@
                 <li>選擇題作答後統整分數</li>
               </ul>
             </details>
-            <details>
+            <details open>
               <summary>科技部計畫(CSS)</summary>
               <ul>
-                <li>做比較特別的頁面樣式
+                <li>比較特別的頁面樣式
                   <br>
-                  <a target="_blank" href="img/skill-1.png">
+                  <a data-toggle="modal" data-target="#lightBoxModal" href="javascript:" (click)="turnLightBox('1','比較特別的頁面樣式')">
                     <img src="img/skill-1.png" alt="Forest">
                   </a>
                 </li>
                 <li>使用入門 CSS
                   <br>
-                  <a target="_blank" href="img/skill-2.png">
+                  <a data-toggle="modal" data-target="#lightBoxModal" href="javascript:" (click)="turnLightBox('2','使用入門 CSS')">
                     <img src="img/skill-2.png" alt="Forest">
                   </a>
                 </li>
@@ -339,58 +339,58 @@
         <div class="containerTime right">
           <div class="content">
             <h5>2016</h5>
-            <details>
+            <details open>
               <summary>實習網站製作(RWD)</summary>
               <ul>
                 <li>輪播圖應用，手刻 CSS
                   <br>
-                  <a target="_blank" href="img/skill-3.png">
+                  <a data-toggle="modal" data-target="#lightBoxModal" href="javascript:" (click)="turnLightBox('3','輪播圖應用，手刻 CSS')">
                     <img src="img/skill-3.png" alt="Forest">
                   </a>
                 </li>
                 <li>搭配 .NET GridView 製作 CSS
                   <br>
-                  <a target="_blank" href="img/skill-4.png">
+                  <a data-toggle="modal" data-target="#lightBoxModal" href="javascript:" (click)="turnLightBox('4','搭配 .NET GridView 製作 CSS')">
                     <img src="img/skill-4.png" alt="Forest">
                   </a>
                 </li>
                 <li>使用 Google MAP 自訂地圖
                   <br>
-                  <a target="_blank" href="img/skill-5.png">
+                  <a data-toggle="modal" data-target="#lightBoxModal" href="javascript:" (click)="turnLightBox('5','使用 Google MAP 自訂地圖')">
                     <img src="img/skill-5.png" alt="Forest">
                   </a>
                 </li>
               </ul>
             </details>
-            <details>
+            <details open>
               <summary>輔佐實習網站製作(套版)</summary>
               <ul>
                 <li>套版，還不會考量設計
                   <br>
-                  <a target="_blank" href="img/skill-6.png">
+                  <a data-toggle="modal" data-target="#lightBoxModal" href="javascript:" (click)="turnLightBox('6','套版，還不會考量設計')">
                     <img src="img/skill-6.png" alt="Forest">
                   </a>
                 </li>
                 <li>Webform 製作預約系統
                   <br>
-                  <a target="_blank" href="img/skill-7.png">
+                  <a data-toggle="modal" data-target="#lightBoxModal" href="javascript:" (click)="turnLightBox('7','Webform 製作預約系統')">
                     <img src="img/skill-7.png" alt="Forest">
                   </a>
                 </li>
               </ul>
             </details>
-            <details>
+            <details open>
               <summary>輔佐實習網站製作(BootStrap)</summary>
               <ul>
-                <li>完全利用 BootStrap3.3.7 製作
+                <li>利用 BootStrap3.3.7 製作
                   <br>
-                  <a target="_blank" href="img/skill-8.png">
+                  <a data-toggle="modal" data-target="#lightBoxModal" href="javascript:" (click)="turnLightBox('8','利用 BootStrap3.3.7 製作')">
                     <img src="img/skill-8.png" alt="Forest">
                   </a>
                 </li>
                 <li>文字編輯器 套用
                   <br>
-                  <a target="_blank" href="img/skill-9.png">
+                  <a data-toggle="modal" data-target="#lightBoxModal" href="javascript:" (click)="turnLightBox('9','文字編輯器套用')">
                     <img src="img/skill-9.png" alt="Forest">
                   </a>
                 </li>
@@ -448,7 +448,7 @@
                 <li>第一次接觸和修改 ASP 架構</li>
                 <li>問答題 換成 選擇題，更動資料庫和程式碼</li>
                 <li>
-                  <a target="_blank" href="http://krasotaiskusstva.com/ki/?theme=xmas">ASP CSS套版</a>
+                  <a target="_blank" href="http://krasotaiskusstva.com/ki/?theme=xmas">ASP CSS套版使用版型</a>
                 </li>
               </ul>
             </details>
@@ -510,7 +510,7 @@
                       <li>子傳父值</li>
                     </ul>
                   </details>
-                  <details>
+                  <details open>
                       <summary>The F2E 修練賽 ( CSS挑戰 )</summary>
                       <ul>
                         <li><a target="_blank" href="https://bear88130.github.io/">ToDoList</a> - file CSS </li>
@@ -534,6 +534,24 @@
 
     </div>
   </div>
+
+    <!-- 圖片 Modal Start -->
+    <div class="modal fade" id="lightBoxModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-80" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">{{lightBoxTitle}}</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img [src]="lightBoxImg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 圖片 Modal End -->
 
   <footer></footer>
 
