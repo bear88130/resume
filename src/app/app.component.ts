@@ -10,10 +10,10 @@ export class AppComponent implements OnInit {
   lightBoxImgNum: string;
   lightBoxImg: string;
   lightBoxTitle: string;
-  isF2E: boolean;
+  isSimplify: boolean;
 
   ngOnInit() {
-    this.isF2E = true;
+    this.isSimplify = true;
   }
 
   turnLightBox(num , title) {
@@ -23,6 +23,6 @@ export class AppComponent implements OnInit {
   }
 
   forStreamline(isChecked) {
-    this.isF2E = isChecked ? false : true ;
+    this.isSimplify = isChecked ? false : true ;
   }
 }
