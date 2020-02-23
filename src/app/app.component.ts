@@ -16,7 +16,13 @@ export class AppComponent implements OnInit {
     this.isSimplify = true;
   }
 
-  turnLightBox(num , title) {
+  emitLightBox(data: {imgNo: string, title: string}) {
+    this.lightBoxImgNum = data.imgNo;
+    this.lightBoxImg = 'img/skill-' + this.lightBoxImgNum + '.png';
+    this.lightBoxTitle = data.title;
+  }
+
+  changeLightBox(num , title) {
     this.lightBoxImgNum = num;
     this.lightBoxImg = 'img/skill-' + this.lightBoxImgNum + '.png';
     this.lightBoxTitle = title;
