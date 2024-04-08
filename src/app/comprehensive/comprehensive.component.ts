@@ -6,7 +6,8 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./comprehensive.component.scss']
 })
 export class ComprehensiveComponent implements OnInit {
-  @Input() isSimplify: boolean;
+  @Input
+  ({ required: true }) isSimplify: boolean = false;
   @Output() lightboxEmitter = new EventEmitter();
 
   constructor() { }

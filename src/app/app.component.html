@@ -10,7 +10,7 @@
     <div class="col-12 forSwitch">
       <span class="">精簡型</span>
       <label class="switch">
-        <input type="checkbox" (click)="forStreamline($event.target.checked)">
+        <input type="checkbox" (click)="forStreamline($event.target)">
         <span class="slider round"></span>
       </label>
       <span>綜合型</span>
@@ -59,9 +59,9 @@
     </div>
   </div>
 
-<app-simplify [isSimplify]="isSimplify" (lightboxEmitter)="emitLightBox($event)"></app-simplify>
+<app-simplify [isSimplify]="isSimplify || false" (lightboxEmitter)="emitLightBox($event)"></app-simplify>
 
-<app-comprehensive [isSimplify]="isSimplify" (lightboxEmitter)="emitLightBox($event)"></app-comprehensive>
+<app-comprehensive [isSimplify]="isSimplify || false" (lightboxEmitter)="emitLightBox($event)"></app-comprehensive>
 
   <!-- 圖片 Modal Start -->
   <div class="modal fade" id="lightBoxModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

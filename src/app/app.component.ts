@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
 
-  lightBoxImgNum: string;
-  lightBoxImg: string;
-  lightBoxTitle: string;
-  isSimplify: boolean;
+  lightBoxImgNum: string | undefined;
+  lightBoxImg: string| undefined;
+  lightBoxTitle: string| undefined;
+  isSimplify: boolean| undefined;
 
   ngOnInit() {
     this.isSimplify = true;
@@ -22,13 +22,13 @@ export class AppComponent implements OnInit {
     this.lightBoxTitle = data.title;
   }
 
-  changeLightBox(num , title) {
+  changeLightBox(num: string , title: string) {
     this.lightBoxImgNum = num;
     this.lightBoxImg = 'img/skill-' + this.lightBoxImgNum + '.png';
     this.lightBoxTitle = title;
   }
 
-  forStreamline(isChecked) {
-    this.isSimplify = isChecked ? false : true ;
+  forStreamline(event: any) {
+    this.isSimplify = event.checked ? false : true ;
   }
 }

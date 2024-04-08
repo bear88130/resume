@@ -6,7 +6,9 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./simplify.component.scss']
 })
 export class SimplifyComponent implements OnInit {
-  @Input() isSimplify: boolean;
+  @Input
+  ({ required: true }) isSimplify: boolean = false;
+
   @Output() lightboxEmitter = new EventEmitter();
 
   constructor() { }
