@@ -71,8 +71,11 @@ import 'core-js/es7/reflect';
 /***************************************************************************************************
  * Zone JS is required by default for Angular itself.
  */
-import 'zone.js/dist/zone';  // Included with Angular CLI.
-
+// 原版本
+// import 'zone.js/dist/zone';  // Included with Angular CLI.
+// 更新版本
+import 'zone.js';
+import 'zone.js/testing';
 
 
 /***************************************************************************************************
