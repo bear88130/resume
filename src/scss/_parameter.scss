@@ -1,23 +1,36 @@
-$normal-blue:   #007bff !default;
-$dark-blue:   #00408B !default;
+// 設計 token：顏色、字體、間距、圓角、陰影
+:root {
+  --color-bg: #f6f7f9;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f1f3f6;
+  --color-border: #e3e6eb;
+  --color-text: #1d2330;
+  --color-text-muted: #5b6575;
+  --color-primary: #3451d1;
+  --color-primary-hover: #2a43b3;
+  --color-primary-soft: #eef1fd;
+  --color-focus: rgba(52, 81, 209, .35);
 
-$normal-red:   #D0021B !default;
+  --font-sans: "Inter", "Noto Sans TC", "Microsoft JhengHei", system-ui, -apple-system, "Segoe UI", sans-serif;
 
-$normal-orange:   #F5A623 !default;
-$light-orange:   #FFF2DC !default;
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-96: 96px;
 
-$normal-gray:#F2F2F2 !default;
-$dark-gray: #757575 !default;
+  --radius-8: 8px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-pill: 999px;
 
-$light-yellow:#FFF2DC !default;
-$normal-yellow:#f3e418 !default;
+  --shadow-sm: 0 1px 2px rgba(16, 24, 40, .05);
+  --shadow-md: 0 8px 24px rgba(16, 24, 40, .08);
 
-$light-purple:rgb(174, 81, 255) !default;
-$normal-purple:#9013FE !default;
-$dark-purple:#7828B4 !default;
-
-$normal-green:#50FF44;
-
-$time-bgcolor:$normal-gray;
-
-
+  --tap-size: 40px;
+  --transition: .2s ease;
+}

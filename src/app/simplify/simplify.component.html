@@ -1,135 +1,79 @@
-<div class="row" *ngIf="isSimplify">
-  <div class="col-12 mt-5">
-    <h4>Project Experience</h4>
-  </div>
+<div *ngIf="isSimplify">
+  <section class="section" aria-labelledby="project-title">
+    <h2 class="section-title" id="project-title">
+      <i class="fas fa-folder-open" aria-hidden="true"></i> Project Experience
+    </h2>
 
-  <div class="col-12">
-    <div class="row information">
-      <div class="col-12 pb-2">
-        <div class="row no-gutters">
-          <div class="col-4 name">專案名稱</div>
-          <div class="col-8 content">餐點出單</div>
+    <div class="project-list">
+      <article class="project">
+        <div class="project-year">2024</div>
+        <div class="project-body">
+          <h3 class="project-name">碩班生活</h3>
+          <p>論文名稱：探討新聞情緒對於不同產業指數的漲跌預測：基於機器學習與深度學習</p>
+          <ul class="tag-list tag-list-sm"><li>機器學習</li><li>深度學習</li><li>新聞情緒分析</li></ul>
         </div>
-      </div>
-      <div class="col-12 pb-2">
-        <div class="row no-gutters">
-          <div class="col-4 name">開發時間</div>
-          <div class="col-8 content">2024 (開發中)</div>
-        </div>
-      </div>
-      <div class="col-12 pb-2">
-        <div class="row no-gutters">
-          <div class="col-4 name">專案內容</div>
-          <div class="col-8 content">家用，自行開發，用 figma 畫圖，再利用前端框架 Angular 開發點餐平台，目前製作到接API顯示餐點和點餐。</div>
-        </div>
-      </div>
+      </article>
 
-      <div class="col-12">
-        <hr>
-      </div>
+      <article class="project">
+        <div class="project-year">2024<span class="badge-soft">開發中</span></div>
+        <div class="project-body">
+          <h3 class="project-name">餐點出單</h3>
+          <p>家用，自行開發，用 figma 畫圖，再利用前端框架 Angular 開發點餐平台，目前製作到接API顯示餐點和點餐。</p>
+          <ul class="tag-list tag-list-sm"><li>Figma</li><li>Angular</li></ul>
+        </div>
+      </article>
 
-      <div class="col-12 pb-2">
-        <div class="row no-gutters">
-          <div class="col-4 name">專案名稱</div>
-          <div class="col-8 content">SAT 學生教學平台</div>
+      <article class="project">
+        <div class="project-year">2021</div>
+        <div class="project-body">
+          <h3 class="project-name">SAT 學生教學平台</h3>
+          <p>利用 ASP.NET API 和 Angular 開發，利用 XD 進行樣板對照和客戶溝通，實作功能有不同課程要不同頁面排版、影片排程並記錄相關數據、多邏輯的作業顯示，資料庫是用 MS SQL 應用不太深入。</p>
+          <ul class="tag-list tag-list-sm"><li>ASP.NET API</li><li>Angular</li><li>XD</li><li>MS SQL</li></ul>
         </div>
-      </div>
-      <div class="col-12 pb-2">
-        <div class="row no-gutters">
-          <div class="col-4 name">開發時間</div>
-          <div class="col-8 content">2021</div>
-        </div>
-      </div>
-      <div class="col-12 pb-2">
-        <div class="row no-gutters">
-          <div class="col-4 name">專案內容</div>
-          <div class="col-8 content">利用 ASP.NET API 和 Angular 開發，利用 XD 進行樣板對照和客戶溝通，實作功能有不同課程要不同頁面排版、影片排程並記錄相關數據、多邏輯的作業顯示，資料庫是用 MS SQL 應用不太深入。</div>
-        </div>
-      </div>
+      </article>
 
-      <div class="col-12">
-        <hr>
-      </div>
+      <article class="project">
+        <div class="project-year">2020</div>
+        <div class="project-body">
+          <h3 class="project-name">台北市政府專案(4個案子)</h3>
+          <p>專案都是利用 Angular 製作後台，偏向時間較緊迫，並通過弱點掃描測試就上線，在中期自己開發模板加速產出(但應該只少三個工作天左右)。</p>
+          <ul class="tag-list tag-list-sm"><li>Angular</li><li>弱點掃描</li></ul>
+        </div>
+      </article>
 
-      <div class="col-12 pb-2">
-        <div class="row no-gutters">
-          <div class="col-4 name">專案名稱</div>
-          <div class="col-8 content">台北市政府專案(4個案子)</div>
+      <article class="project">
+        <div class="project-year">2018 – 2020</div>
+        <div class="project-body">
+          <h3 class="project-name">文化大學的教學平台</h3>
+          <p>利用前端框架 Angular 進行版本升級 v2 -> v6、效能調整、開發功能，像是分組、學習數據顯示、編輯考卷即時預覽、批閱考卷、劃分課程權限和身分權限等；主要是前端的負責人跟前輩一起開發。</p>
+          <ul class="tag-list tag-list-sm"><li>Angular</li><li>版本升級</li><li>效能調整</li></ul>
         </div>
-      </div>
-      <div class="col-12 pb-2">
-        <div class="row no-gutters">
-          <div class="col-4 name">開發時間</div>
-          <div class="col-8 content">2020</div>
-        </div>
-      </div>
-      <div class="col-12 pb-2">
-        <div class="row no-gutters">
-          <div class="col-4 name">專案內容</div>
-          <div class="col-8 content">專案都是利用 Angular 製作後台，偏向時間較緊迫，並通過弱點掃描測試就上線，在中期自己開發模板加速產出(但應該只少三個工作天左右)。</div>
-        </div>
-      </div>
+      </article>
 
-      <div class="col-12">
-        <hr>
-      </div>
-
-      <div class="col-12 pb-2">
-        <div class="row no-gutters">
-          <div class="col-4 name">專案名稱</div>
-          <div class="col-8 content">文化大學的教學平台</div>
+      <article class="project">
+        <div class="project-year">2017</div>
+        <div class="project-body">
+          <h3 class="project-name">幼兒園網站</h3>
+          <p>利用 ASP.NET Webform 建置形象網站，後台管理班級、相簿、替換官網元件和不同單位登入功能。</p>
+          <ul class="tag-list tag-list-sm"><li>ASP.NET WebForm</li></ul>
         </div>
-      </div>
-      <div class="col-12 pb-2">
-        <div class="row no-gutters">
-          <div class="col-4 name">開發時間</div>
-          <div class="col-8 content">2018-2020</div>
-        </div>
-      </div>
-      <div class="col-12 pb-2">
-        <div class="row no-gutters">
-          <div class="col-4 name">專案內容</div>
-          <div class="col-8 content">利用前端框架 Angular 進行版本升級 v2 -> v6、效能調整、開發功能，像是分組、學習數據顯示、編輯考卷即時預覽、批閱考卷、劃分課程權限和身分權限等；主要是前端的負責人跟前輩一起開發。</div>
-        </div>
-      </div>
-
-      <div class="col-12">
-        <hr>
-      </div>
-      
-      <div class="col-12 pb-2">
-        <div class="row no-gutters">
-          <div class="col-4 name">專案名稱</div>
-          <div class="col-8 content">幼兒園網站</div>
-        </div>
-      </div>
-      <div class="col-12 pb-2">
-        <div class="row no-gutters">
-          <div class="col-4 name">開發時間</div>
-          <div class="col-8 content">2017</div>
-        </div>
-      </div>
-      <div class="col-12 pb-2">
-        <div class="row no-gutters">
-          <div class="col-4 name">專案內容</div>
-          <div class="col-8 content">利用 ASP.NET Webform 建置形象網站，後台管理班級、相簿、替換官網元件和不同單位登入功能。</div>
-        </div>
-      </div>
+      </article>
     </div>
+  </section>
 
-  </div>
-  
-  <div class="col-12 mt-5">
-    <h4>Skill</h4>
-  </div>
-  <div class="col-12 skill">
+  <section class="section" aria-labelledby="skill-title">
+    <h2 class="section-title" id="skill-title">
+      <i class="fas fa-code" aria-hidden="true"></i> Skill
+    </h2>
+  <div class="skill">
     <div class="accordion" id="accordionExample">
       <div class="card">
         <div class="card-header" id="headingTwo">
           <h5 class="mb-0">
-            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+            <button class="btn btn-link accordion-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
               aria-expanded="false" aria-controls="collapseTwo">
-              Angular
+              <span><i class="fab fa-angular" aria-hidden="true"></i> Angular</span>
+              <i class="fas fa-chevron-down chevron" aria-hidden="true"></i>
             </button>
           </h5>
         </div>
@@ -208,7 +152,7 @@
                   </a>
                 </figure>
               </div>
-              <div class="col-lg-6 col-md-12 mt-md-3">
+              <div class="col-lg-6 col-md-12">
                 <figure>
                   <figcaption>2019 - iT 邦幫忙鐵人賽 - Angular初期筆記</figcaption>
                   <a target="_blank" href="https://ithelp.ithome.com.tw/users/20107754/ironman/1741">
@@ -216,7 +160,7 @@
                   </a>
                 </figure>
               </div>
-              <div class="col-lg-6 col-md-12 mt-md-3">
+              <div class="col-lg-6 col-md-12">
                 <figure>
                   <figcaption>2018 - Skill Tree - Angular Json應用</figcaption>
                   <a target="_blank" href="https://bear88130.github.io/F2E9/">
@@ -224,7 +168,7 @@
                   </a>
                 </figure>
               </div>
-              <div class="col-lg-6 col-md-12 mt-md-3">
+              <div class="col-lg-6 col-md-12">
                 <figure>
                   <figcaption>2018 - Validation - Angular驗證</figcaption>
                   <a target="_blank" href="https://bear88130.github.io/validation/">
@@ -232,7 +176,7 @@
                   </a>
                 </figure>
               </div>
-              <div class="col-lg-6 col-md-12 mt-md-3">
+              <div class="col-lg-6 col-md-12">
                 <figure>
                   <figcaption>2018 - Commic - Angular傳值</figcaption>
                   <a target="_blank" href="https://bear88130.github.io/commic/">
@@ -240,7 +184,7 @@
                   </a>
                 </figure>
               </div>
-              <div class="col-lg-6 col-md-12 mt-md-3">
+              <div class="col-lg-6 col-md-12">
                 <figure>
                   <figcaption>2018 - Angular 初階線上課程</figcaption>
                   <a data-toggle="modal" data-target="#lightBoxModal" href="javascript:"
@@ -256,9 +200,10 @@
       <div class="card">
         <div class="card-header" id="headingOne">
           <h5 class="mb-0">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-              aria-expanded="true" aria-controls="collapseOne">
-              切版
+            <button class="btn btn-link accordion-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapseOne"
+              aria-expanded="false" aria-controls="collapseOne">
+              <span><i class="fab fa-css3-alt" aria-hidden="true"></i> 切版</span>
+              <i class="fas fa-chevron-down chevron" aria-hidden="true"></i>
             </button>
           </h5>
         </div>
@@ -273,7 +218,7 @@
                   </a>
                 </figure>
               </div>
-              <div class="col-lg-6 col-md-12  mt-md-3">
+              <div class="col-lg-6 col-md-12">
                 <figure>
                   <figcaption>2018 - Canvas Game - Canvas動畫 初體驗</figcaption>
                   <a target="_blank" href="https://codepen.io/bear88130/pen/LBxyzO">
@@ -281,7 +226,7 @@
                   </a>
                 </figure>
               </div>
-              <div class="col-lg-6 col-md-12 mt-md-3">
+              <div class="col-lg-6 col-md-12">
                 <figure>
                   <figcaption>2018 - file CSS - ToDoList</figcaption>
                   <a target="_blank" href="https://bear88130.github.io/">
@@ -289,7 +234,7 @@
                   </a>
                 </figure>
               </div>
-              <div class="col-lg-6 col-md-12 mt-md-3">
+              <div class="col-lg-6 col-md-12">
                 <figure>
                   <figcaption>2018 - bgImg CSS - Filter</figcaption>
                   <a target="_blank" href="https://bear88130.github.io/F2E-2">
@@ -297,7 +242,7 @@
                   </a>
                 </figure>
               </div>
-              <div class="col-lg-6 col-md-12 mt-md-3">
+              <div class="col-lg-6 col-md-12">
                 <figure>
                   <figcaption>2018 - Chart.js - Admin Order</figcaption>
                   <a target="_blank" href="https://bear88130.github.io/F2E-3">
@@ -305,7 +250,7 @@
                   </a>
                 </figure>
               </div>
-              <div class="col-lg-6 col-md-12 mt-md-3">
+              <div class="col-lg-6 col-md-12">
                 <figure>
                   <figcaption>2018 - Grid CSS - Product Gallery</figcaption>
                   <a target="_blank" href="https://bear88130.github.io/F2E-4">
@@ -313,7 +258,7 @@
                   </a>
                 </figure>
               </div>
-              <div class="col-lg-6 col-md-12 mt-md-3">
+              <div class="col-lg-6 col-md-12">
                 <figure>
                   <figcaption>2016 - 輪播圖應用，手刻 CSS </figcaption>
                   <a data-toggle="modal" data-target="#lightBoxModal" href="javascript:"
@@ -322,7 +267,7 @@
                   </a>
                 </figure>
               </div>
-              <div class="col-lg-6 col-md-12 mt-md-3">
+              <div class="col-lg-6 col-md-12">
                 <figure>
                   <figcaption>2016 - 套版</figcaption>
                   <a data-toggle="modal" data-target="#lightBoxModal" href="javascript:"
@@ -331,7 +276,7 @@
                   </a>
                 </figure>
               </div>
-              <div class="col-lg-6 col-md-12 mt-md-3">
+              <div class="col-lg-6 col-md-12">
                 <figure>
                   <figcaption>2016 - BootStrap3.3.7 製作</figcaption>
                   <a data-toggle="modal" data-target="#lightBoxModal" href="javascript:"
@@ -340,7 +285,7 @@
                   </a>
                 </figure>
               </div>
-              <div class="col-lg-6 col-md-12 mt-md-3">
+              <div class="col-lg-6 col-md-12">
                 <figure>
                   <figcaption>2015 - 比較特別的頁面樣式 </figcaption>
                   <a data-toggle="modal" data-target="#lightBoxModal" href="javascript:"
@@ -356,9 +301,10 @@
       <div class="card">
         <div class="card-header" id="headingThree">
           <h5 class="mb-0">
-            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+            <button class="btn btn-link accordion-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
               aria-expanded="false" aria-controls="collapseThree">
-              GitHub
+              <span><i class="fab fa-github" aria-hidden="true"></i> GitHub</span>
+              <i class="fas fa-chevron-down chevron" aria-hidden="true"></i>
             </button>
           </h5>
         </div>
@@ -412,5 +358,5 @@
       </div> -->
     </div>
   </div>
-
+  </section>
 </div>

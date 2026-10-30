@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
     this.lightBoxTitle = title;
   }
 
-  forStreamline(event: any) {
-    this.isSimplify = event.checked ? false : true ;
+  setMode(isSimplify: boolean) {
+    this.isSimplify = isSimplify;
   }
 }
