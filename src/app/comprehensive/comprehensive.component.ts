@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
+  standalone: false,
   selector: 'app-comprehensive',
   templateUrl: './comprehensive.component.html',
   styleUrls: ['./comprehensive.component.scss']

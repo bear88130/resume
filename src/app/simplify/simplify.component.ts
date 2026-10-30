@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
+  standalone: false,
   selector: 'app-simplify',
   templateUrl: './simplify.component.html',
   styleUrls: ['./simplify.component.scss']
